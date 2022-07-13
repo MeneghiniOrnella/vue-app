@@ -1,19 +1,24 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/dog">Dog</router-link> |
+    <router-link to="/blog">Blog</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
 </template>
 
 <style>
+body{
+  background: linear-gradient(rgb(230, 230, 230), rgb(235, 190, 248));
+  
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #041f3d;
+  
 }
 
 nav {
