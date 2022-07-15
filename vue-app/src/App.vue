@@ -1,13 +1,24 @@
 <template>
-  <nav>
+  <Navbar />
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/blog">Blog</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
+  </nav> -->
   <router-view />
 </template>
 
-<style>
+<script>
+import Navbar from "./components/Navbar";
+
+export default {
+  components: {
+    Navbar
+  }
+}
+</script>
+
+<!-- <style>
 body{
   background: linear-gradient(rgb(230, 230, 230), rgb(235, 190, 248));
   
@@ -33,4 +44,4 @@ nav a {
 nav a.router-link-exact-active {
   color: #172fb9;
 }
-</style>
+</style> -->
